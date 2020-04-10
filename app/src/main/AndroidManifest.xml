@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".QuestionThree"></activity>
+        <activity android:name=".GameOver" />
+        <activity android:name=".QuestionTwo" />
+        <activity android:name=".QuestionOne" />
         <activity android:name=".splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

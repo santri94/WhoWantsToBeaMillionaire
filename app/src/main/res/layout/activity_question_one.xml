@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionOne">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="317dp"
+        android:layout_height="193dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="What sort of animal is Walt Disney's Dumbo?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColorLink="#00BD5656"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <LinearLayout
+        android:layout_width="417dp"
+        android:layout_height="314dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/rdGroup"
+            android:layout_below="@+id/txtView">
+            <RadioButton
+                android:id="@+id/Deer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="100dp"
+                android:text="Deer" />
+            <RadioButton
+                android:id="@+id/Rabbit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="100dp"
+                android:text="Rabbit" />
+            <RadioButton
+                android:id="@+id/Elephant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="100dp"
+                android:text="Elephant" />
+            <RadioButton
+                android:id="@+id/Donkey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="100dp"
+                android:text="Donkey" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="171dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Next"
+            android:onClick="NextQuestion"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="324dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColorLink="#00BD5656"
+        android:text="Earned $00.00"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
