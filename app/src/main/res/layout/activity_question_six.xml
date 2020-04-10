@@ -4,6 +4,108 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".QuestionSix">
+    tools:context=".QuestionOne">
+
+    <TextView
+        android:id="@+id/earnedValue"
+        android:layout_width="324dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:gravity="center"
+        android:text="Earned $00.00"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColorLink="#00BD5656"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="353dp"
+        android:layout_height="234dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Who composed 'Rhapsody in Blue' ?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColorLink="#00BD5656"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/earnedValue" />
+
+    <LinearLayout
+        android:layout_width="417dp"
+        android:layout_height="314dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/rdGroup"
+            android:layout_below="@+id/txtView">
+            <RadioButton
+                android:id="@+id/Irving"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="100dp"
+                android:text="Irving Berlin" />
+            <RadioButton
+                android:id="@+id/GeorgeGershwin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="100dp"
+                android:text="George Gershwin" />
+            <RadioButton
+                android:id="@+id/Aaron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="100dp"
+                android:text="Aaron Copland" />
+            <RadioButton
+                android:id="@+id/Cole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="100dp"
+                android:text="Cole Porter" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="171dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Next"
+            android:onClick="NextQuestion"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
