@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".QuestionFour"></activity>
+        <activity android:name=".QuestionEight"></activity>
+        <activity android:name=".QuestionSeven" />
+        <activity android:name=".QuestionSix" />
+        <activity android:name=".QuestionFive" />
+        <activity android:name=".QuestionFour" />
         <activity android:name=".QuestionThree" />
         <activity android:name=".GameOver" />
         <activity android:name=".QuestionTwo" />
