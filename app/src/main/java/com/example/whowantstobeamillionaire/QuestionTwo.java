@@ -58,12 +58,12 @@ public class QuestionTwo extends AppCompatActivity {
 
         //Get money earned
         Bundle extras = getIntent().getExtras();
-        Double earnedSoFar = extras.getDouble("earnedMoney");
+        int earnedSoFar = extras.getInt("earnedMoney");
 
         if (answerSelected.equals("Manuel")){
             Toast.makeText(getApplicationContext(), "Correct! You earned $200"  , Toast.LENGTH_SHORT).show();
 
-            double earnedMoney = 200.00 + earnedSoFar;
+            int earnedMoney = 200 + earnedSoFar;
             Intent intent=new Intent(QuestionTwo.this, QuestionThree.class);
             intent.putExtra("earnedMoney",earnedMoney);
             startActivity(intent);
