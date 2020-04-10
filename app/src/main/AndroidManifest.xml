@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".QuestionEight"></activity>
+        <activity android:name=".WinPage"></activity>
+        <activity android:name=".QuestionEight" />
         <activity android:name=".QuestionSeven" />
         <activity android:name=".QuestionSix" />
         <activity android:name=".QuestionFive" />
