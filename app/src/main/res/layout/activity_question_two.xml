@@ -7,12 +7,12 @@
     tools:context=".QuestionOne">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/earnedValue"
         android:layout_width="324dp"
         android:layout_height="52dp"
         android:layout_marginStart="44dp"
         android:layout_marginLeft="44dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="56dp"
         android:layout_marginEnd="43dp"
         android:layout_marginRight="43dp"
         android:gravity="center"
@@ -35,7 +35,7 @@
         android:textColorLink="#00BD5656"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/earnedValue" />
 
     <LinearLayout
         android:layout_width="417dp"

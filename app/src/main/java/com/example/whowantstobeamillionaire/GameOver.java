@@ -18,7 +18,7 @@ public class GameOver extends AppCompatActivity {
 
     public void setMoneyEarned() {
         Bundle extras = getIntent().getExtras();
-        double tmp = extras.getDouble("earnedMoney");
+        int tmp = extras.getInt("earnedMoney");
         money.setText("$"+tmp);
     }
 }

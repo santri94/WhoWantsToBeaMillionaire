@@ -17,7 +17,7 @@
         android:textColorLink="#00BD5656"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/earnedValue" />
 
     <LinearLayout
         android:layout_width="417dp"
@@ -88,7 +88,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/earnedValue"
         android:layout_width="324dp"
         android:layout_height="52dp"
         android:layout_marginStart="44dp"

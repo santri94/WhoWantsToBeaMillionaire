@@ -18,17 +18,17 @@ public class QuestionTwo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question_two);
-        setCurrentMoney();
-        money = (TextView) findViewById(R.id.textView2);
+        money = (TextView) findViewById(R.id.earnedValue);
         manuel = (RadioButton)findViewById(R.id.Manuel);
         pedro = (RadioButton)findViewById(R.id.Pedro);
         alfonso = (RadioButton)findViewById(R.id.Alfonso);
         javier = (RadioButton)findViewById(R.id.Javier);
+        setCurrentMoney();
     }
 
     public void setCurrentMoney() {
         Bundle extras = getIntent().getExtras();
-        Double earnedSoFar = extras.getDouble("earnedMoney");
+        int earnedSoFar = extras.getInt("earnedMoney");
 
         money.setText("Earned $"+earnedSoFar);
 

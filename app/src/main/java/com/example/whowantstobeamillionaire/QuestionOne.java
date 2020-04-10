@@ -48,14 +48,14 @@ public class QuestionOne extends AppCompatActivity {
         if (answerSelected.equals("Elephant")){
             Toast.makeText(getApplicationContext(), "Correct! You earned $100"  , Toast.LENGTH_SHORT).show();
 
-            double earnedMoney = 100.00;
+            int earnedMoney = 100;
             Intent intent=new Intent(QuestionOne.this, QuestionTwo.class);
             intent.putExtra("earnedMoney",earnedMoney);
             startActivity(intent);
             finish();
         }
         else{
-            double earnedMoney = 0; // 0 because we haven't earned any money
+            int earnedMoney = 0; // 0 because we haven't earned any money
             Intent intent=new Intent(QuestionOne.this, GameOver.class);
             intent.putExtra("earnedMoney", earnedMoney);
             startActivity(intent);
